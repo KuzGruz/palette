@@ -1,0 +1,33 @@
+.palette-item {
+  position: relative;
+
+  .picker {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 1;
+    cursor: pointer;
+  }
+
+  .remove {
+    opacity: 0;
+    pointer-events: none;
+    cursor: pointer;
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(40%, -40%);
+    transition: opacity .3s;
+  }
+
+  &:hover .remove {
+    opacity: 1;
+    pointer-events: auto;
+  }
+}
+
+

@@ -1,0 +1,22 @@
+.wrapper {
+  display: inline-flex;
+  flex-direction: column;
+
+  label {
+    margin-left: 10px;
+    font-weight: 700;
+    margin-bottom: 2px;
+    font-size: 13px;
+    color: var(--label-color);
+  }
+
+  textarea {
+    max-width: 100%;
+    background: var(--secondary-background-color);
+    border-radius: 10px;
+    border: none;
+    padding: 6px 12px;
+    color: var(--label-color);
+    outline: none;
+  }
+}

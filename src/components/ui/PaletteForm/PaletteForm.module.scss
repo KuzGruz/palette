@@ -1,0 +1,21 @@
+.column {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.colors {
+  flex: 1;
+  margin-bottom: 24px;
+  display: grid;
+  gap: 17px 25px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows:  repeat(6, 1fr);
+
+  .color {
+    width: 54px;
+    height: 54px;
+    border-radius: 5px;
+  }
+}

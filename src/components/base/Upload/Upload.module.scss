@@ -1,0 +1,91 @@
+$width: 130px;
+$height: 90px;
+$border-radius: 10px;
+
+.upload {
+  display: inline-flex;
+  flex-direction: column;
+
+  label {
+    margin-left: 10px;
+    font-weight: 700;
+    margin-bottom: 2px;
+    font-size: 13px;
+    color: var(--label-color);
+  }
+
+  .wrapper {
+    height: $height;
+    width: $width;
+    border-radius: $border-radius;
+    position: relative;
+    cursor: pointer;
+  }
+
+  img {
+    height: $height;
+    width: $width;
+    object-fit: contain;
+    border-radius: $border-radius;
+    background: var(--secondary-background-color);
+  }
+
+  .close {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    path {
+      fill: var(--text-color);
+    }
+  }
+
+  .file {
+    width: 100%;
+    height: 100%;
+    border-radius: $border-radius;
+    border: 1px solid transparent;
+    background: var(--secondary-background-color);
+
+    .icon {
+      pointer-events: none;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    &:hover {
+      opacity: 0.9;
+    }
+
+    &.active {
+      border-color: var(--primary-color);
+
+      .icon path {
+        fill: var(--primary-color);
+      }
+    }
+  }
+
+  input {
+    cursor: pointer;
+    z-index: 1;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  &.error {
+    .file {
+      border-color: var(--error-color);
+
+      .icon path {
+        fill: var(--error-color);
+      }
+    }
+  }
+}

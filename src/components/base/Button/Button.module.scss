@@ -1,0 +1,18 @@
+.button {
+  cursor: pointer;
+  font-weight: 400;
+  text-align: center;
+  padding: 14px 16px;
+  border-radius: 8px;
+  background: var(--primary-color);
+  color: var(--text-color);
+  transition: all .3s;
+
+  &:hover, &:active {
+    background: var(--accent-color);
+  }
+
+  &.full {
+    width: 100%;
+  }
+}

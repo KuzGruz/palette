@@ -1,0 +1,10 @@
+:root {
+    --background-color: #1F2223;
+    --main-background-color: #000000;
+    --secondary-background-color: rgba(118, 118, 128, 0.24);
+    --primary-color: #007AFF;
+    --accent-color: #4346b6;
+    --text-color: #FFFFFF;
+    --label-color: rgba(235, 235, 245, 0.6);
+    --error-color: rgba(231, 16, 32, 0.6);
+}
